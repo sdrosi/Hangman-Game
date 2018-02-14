@@ -32,10 +32,11 @@ document.onkeyup = function(beginGame) {
         if (gameWord.includes(userGuess)) {
             document.getElementById("wordBlanks").innerHTML = answerArray.push(" ");}
 
-        else { guessesRemain--;
+        else {
+            guessesRemain--;
             document.getElementById("guesses-left").innerHTML = guessesRemain;
             document.getElementById("wrong-Guesses").innerHTML = userGuess;
-            
+            wrongArray.push(userGuess);
         }
 
     };
