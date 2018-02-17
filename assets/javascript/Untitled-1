@@ -4,6 +4,11 @@ var myArray = ["fire", "crackle", "hiking", "mountain", "desert"];
 //choose random word
 var randWord = myArray[Math.floor(Math.random() * myArray.length)]
 
+//split word
+
+answerArray = randomWord.split(" ");};
+
+
 //globals
 var gameWord;
 var answerArray = [];
@@ -20,7 +25,7 @@ var guessesRemain = 10;
 
 document.onkeyup = function(beginGame) {
     userGuess = event.key;
-    for (var i = 0; i < randWord.length; i++) {
+    for (var i = 0; i < a.length; i++) {
         answerArray[i] = "_";
     }
 
@@ -30,7 +35,7 @@ document.onkeyup = function(beginGame) {
     document.getElementById("word-blanks").innerHTML = gameWord;
 
     function stringSplit() {
-         answerArray = str.gameWord(" ");};
+         answerArray = randomWord.split(" ");};
 
         if (gameWord.includes(userGuess)) {
             document.getElementById("wordBlanks").innerHTML = answerArray.push(" ");}
